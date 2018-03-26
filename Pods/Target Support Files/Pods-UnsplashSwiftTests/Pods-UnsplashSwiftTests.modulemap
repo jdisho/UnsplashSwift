@@ -1,0 +1,6 @@
+framework module Pods_UnsplashSwiftTests {
+  umbrella header "Pods-UnsplashSwiftTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
