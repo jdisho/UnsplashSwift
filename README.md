@@ -15,7 +15,7 @@ pod 'UnsplashSwift', '~> 0.1'
 Created with ❤️ by [Joan Disho](https://twitter.com/_disho)
 
 ## 🙏 Acknowledgements
-Inspired by [Moya]("https://github.com/Moya/Moya")
+Inspired by [Moya](https://github.com/Moya/Moya)
 
 ### 📃 License
 
