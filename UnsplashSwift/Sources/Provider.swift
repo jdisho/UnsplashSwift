@@ -1,5 +1,5 @@
 //
-//  UnsplashProvider.swift
+//  Provider.swift
 //  UnsplashSwift
 //
 //  Created by Joan Disho on 26.03.18.
@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-public class UnsplashProvider<T: TargetType> {
+public class Provider<T: TargetType> {
     private let token: String?
     private let clientID: String?
 
@@ -27,14 +27,16 @@ public class UnsplashProvider<T: TargetType> {
         fromTarget target: T,
         headers: HTTPHeaders = [:]
         ) -> DataRequest {
+
         var headers = headers
         headers["Accept-Version"] = "v1"
+
         if let token = token {
             headers["Authorization"] = "Bearer \(token)"
-            print(headers.description)
         } else if let clientID = clientID {
             headers["Authorization"] = "Client-ID \(clientID)"
         }
+
         return Alamofire.request(
             target.endpoint,
             method: target.method,
@@ -42,11 +44,9 @@ public class UnsplashProvider<T: TargetType> {
             encoding: URLEncoding(
                 destination: .methodDependent,
                 arrayEncoding: .noBrackets,
-                boolEncoding:
-                .literal
+                boolEncoding: .literal
             ),
             headers: headers
         )
-
         }
 }

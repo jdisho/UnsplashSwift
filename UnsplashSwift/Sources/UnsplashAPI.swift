@@ -9,13 +9,7 @@
 import Foundation
 import Alamofire
 
-public protocol TargetType {
-    var endpoint: URL { get }
-    var method: HTTPMethod { get }
-    var parameters: [String: Any] { get }
-}
-
-public enum UnsplashAPI: TargetType {
+public enum UnsplashAPI {
 
     /// Get the user's profile
     case getMe
@@ -204,7 +198,7 @@ public enum UnsplashAPI: TargetType {
 
 }
 
-public extension UnsplashAPI {
+extension UnsplashAPI: TargetType {
 
     public var baseURL: URL {
         return URL(string: "https://api.unsplash.com")!
@@ -376,7 +370,7 @@ public extension UnsplashAPI {
         }
     }
 
-    var parameters: [String: Any] {
+    public var parameters: [String: Any] {
         switch self {
         case let .updateMe(
             username,
@@ -507,7 +501,6 @@ public extension UnsplashAPI {
             description,
             isPrivate
             ):
-
             var params: [String: Any] = [:]
             params["title"] = title
             params["description"] = description
@@ -537,6 +530,4 @@ public extension UnsplashAPI {
             return [:]
         }
     }
-
-    
 }
