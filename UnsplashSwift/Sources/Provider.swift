@@ -13,12 +13,12 @@ public class Provider<T: TargetType> {
     private let token: String?
     private let clientID: String?
 
-    init(token: String) {
+    public init(token: String) {
         self.token = token
         clientID = nil
     }
 
-    init(clientID: String) {
+    public init(clientID: String) {
         self.clientID = clientID
         self.token = nil
     }
