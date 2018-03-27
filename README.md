@@ -8,8 +8,25 @@
 To integrate UnsplashSwift into your Xcode project using CocoaPods, specify it in your `Podfile`:
 
 ```ruby
-pod 'UnsplashSwift', '~> 0.1'
+pod 'UnsplashSwift'
 ```
+
+## 👨🏻‍💻 Usage
+
+```swift
+let unsplash = Provider<Unsplash>(clientID: "xxx") // only for public actions
+
+// OR
+
+let unsplash = Provider<Unsplash>(token: "xxx") // for all actions
+
+provider.request(.photos(page: 1, perPage: 10, orderBy: .popular)).responseJSON { response in
+    // do something with the response
+}
+```
+UnsplashSwift is build on top of Alamofire.
+
+See [Alamofire](https://github.com/Alamofire/Alamofire) for more information about `Response Handling`, `Response Validation`
 
 ## 🐨 Author
 Created with ❤️ by [Joan Disho](https://twitter.com/_disho)
