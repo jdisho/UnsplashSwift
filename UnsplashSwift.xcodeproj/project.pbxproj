@@ -16,7 +16,7 @@
 		DCD61BE3206993BC0064B775 /* OrderBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61BDC206993BC0064B775 /* OrderBy.swift */; };
 		DCD61BE4206993BC0064B775 /* UnsplashAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61BDD206993BC0064B775 /* UnsplashAuthManager.swift */; };
 		DCD61BE5206993BC0064B775 /* Orientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61BDE206993BC0064B775 /* Orientation.swift */; };
-		DCD61BE6206993BC0064B775 /* UnsplashAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61BDF206993BC0064B775 /* UnsplashAPI.swift */; };
+		DCD61BE6206993BC0064B775 /* Unsplash.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61BDF206993BC0064B775 /* Unsplash.swift */; };
 		DCD61BE7206993BC0064B775 /* Resolution.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61BE0206993BC0064B775 /* Resolution.swift */; };
 		DCD61C152069A66F0064B775 /* TargetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCD61C142069A66F0064B775 /* TargetType.swift */; };
 		ED48FEB6200FF1A309ECF6B7 /* Pods_UnsplashSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53E8385AD1AAF41B6980145B /* Pods_UnsplashSwift.framework */; };
@@ -49,7 +49,7 @@
 		DCD61BDC206993BC0064B775 /* OrderBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderBy.swift; sourceTree = "<group>"; };
 		DCD61BDD206993BC0064B775 /* UnsplashAuthManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsplashAuthManager.swift; sourceTree = "<group>"; };
 		DCD61BDE206993BC0064B775 /* Orientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Orientation.swift; sourceTree = "<group>"; };
-		DCD61BDF206993BC0064B775 /* UnsplashAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnsplashAPI.swift; sourceTree = "<group>"; };
+		DCD61BDF206993BC0064B775 /* Unsplash.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Unsplash.swift; sourceTree = "<group>"; };
 		DCD61BE0206993BC0064B775 /* Resolution.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Resolution.swift; sourceTree = "<group>"; };
 		DCD61C142069A66F0064B775 /* TargetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetType.swift; sourceTree = "<group>"; };
 		E3F804223B18488B468F16C8 /* Pods-UnsplashSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnsplashSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-UnsplashSwiftTests/Pods-UnsplashSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 				DCD61BDC206993BC0064B775 /* OrderBy.swift */,
 				DCD61BDD206993BC0064B775 /* UnsplashAuthManager.swift */,
 				DCD61BDE206993BC0064B775 /* Orientation.swift */,
-				DCD61BDF206993BC0064B775 /* UnsplashAPI.swift */,
+				DCD61BDF206993BC0064B775 /* Unsplash.swift */,
 				DCD61BE0206993BC0064B775 /* Resolution.swift */,
 				DCD61C142069A66F0064B775 /* TargetType.swift */,
 			);
@@ -358,7 +358,7 @@
 				DCD61BE7206993BC0064B775 /* Resolution.swift in Sources */,
 				DCD61C152069A66F0064B775 /* TargetType.swift in Sources */,
 				DCD61BE3206993BC0064B775 /* OrderBy.swift in Sources */,
-				DCD61BE6206993BC0064B775 /* UnsplashAPI.swift in Sources */,
+				DCD61BE6206993BC0064B775 /* Unsplash.swift in Sources */,
 				DCD61BE4206993BC0064B775 /* UnsplashAuthManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

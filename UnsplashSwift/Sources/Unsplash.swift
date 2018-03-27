@@ -1,5 +1,5 @@
 //
-//  UnsplashAPI.swift
+//  Unsplash.swift
 //  UnsplashSwift
 //
 //  Created by Joan Disho on 26.03.18.
@@ -9,7 +9,7 @@
 import Foundation
 import Alamofire
 
-public enum UnsplashAPI {
+public enum Unsplash {
 
     /// Get the user's profile
     case getMe
@@ -198,7 +198,7 @@ public enum UnsplashAPI {
 
 }
 
-extension UnsplashAPI: TargetType {
+extension Unsplash: TargetType {
 
     public var baseURL: URL {
         return URL(string: "https://api.unsplash.com")!
