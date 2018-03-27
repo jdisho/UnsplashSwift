@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |spec|
   spec.name         = 'UnsplashSwift'
-  spec.version      = '0.1.0'
+  spec.version      = '0.2.0'
   spec.license      = { :type => 'MIT' }
   spec.homepage     = 'https://github.com/jdisho/UnsplashSwift'
   spec.authors      = { 'Joan Disho' => 'dishojoan@gmail.com' }
